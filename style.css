@@ -63,3 +63,89 @@ details p {
     padding: 1rem;
     color: var(--text-gray);
 }
+
+/* Sección de Servicios */
+#servicios {
+    padding: 4rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Layout Superior (Texto + Imagen) */
+.servicios-intro {
+    display: flex;
+    flex-direction: column; /* Mobile First */
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.intro-content h2 {
+    color: var(--accent-cyan);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px var(--accent-cyan); /* Efecto visual moderno */
+}
+
+/* Banner de Frase */
+.motivacion-banner {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.motivacion-banner h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/* Grid de 3 Tarjetas */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en móvil */
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--bg-card); /* El gris oscuro que definimos antes */
+    padding: 2rem;
+    border-radius: 12px;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-bottom: 4px solid var(--accent-cyan);
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+/* Desktop: Ajuste de columnas */
+@media (min-width: 768px) {
+    .servicios-intro {
+        flex-direction: row; /* Texto a la izquierda, imagen a la derecha */
+        text-align: left;
+    }
+    
+    .intro-content { flex: 1; }
+    .intro-image { flex: 1; }
+
+    .servicios-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
+    }
+}
