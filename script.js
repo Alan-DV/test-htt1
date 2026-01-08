@@ -31,20 +31,37 @@ slider.addEventListener('mousemove', (e) => {
 
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav-links');
-const navLinks = document.querySelectorAll('.nav-links li');
+const closeBtn = document.getElementById('close-menu');
+const navLinks = document.querySelectorAll('.nav-links li a');
 
-burger.addEventListener('click', () => {
-    // Abrir/Cerrar menú
+// Función para abrir/cerrar
+const toggleNav = () => {
     nav.classList.toggle('nav-active');
-    
-    // Animación de la hamburguesa (se convierte en X)
     burger.classList.toggle('toggle');
-});
+}
 
-// Cerrar menú al hacer click en cualquier link
+// Abrir con el burger
+burger.addEventListener('click', toggleNav);
+
+// Cerrar con la X
+closeBtn.addEventListener('click', toggleNav);
+
+// Cerrar al tocar cualquier link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('nav-active');
         burger.classList.remove('toggle');
     });
+});
+
+// --- CERRAR AL TOCAR FUERA DEL WRAP ---
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = nav.contains(event.target);
+    const isClickOnBurger = burger.contains(event.target);
+
+    // Si el menú está abierto y el clic NO fue en el menú ni en el burger, cerramos
+    if (nav.classList.contains('nav-active') && !isClickInsideMenu && !isClickOnBurger) {
+        nav.classList.remove('nav-active');
+        burger.classList.remove('toggle');
+    }
 });
