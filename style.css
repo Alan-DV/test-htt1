@@ -594,3 +594,43 @@ details p {
 #clientes h2 {
     margin-top: 0; /* Aseguramos que el título no tenga márgenes que rompan el diseño */
 }
+
+footer {
+    background-color: #0a0a0a;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.footer-logo {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.footer-socials {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.copyright {
+    color: #555;
+    font-size: 0.8rem;
+}
