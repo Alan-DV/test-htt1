@@ -1,26 +1,65 @@
+/* Variables de Marca */
+:root {
+    --bg-dark: #000000; /* Negro puro estilo Instagram */
+    --bg-card: #121212; /* Gris muy oscuro para tarjetas */
+    --accent-cyan: #45f3ff; /* El color de tu logo */
+    --text-main: #ffffff;
+    --text-gray: #b3b3b3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: sans-serif;
-    transition: background 0.5s;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif; /* Tipografía limpia y moderna */
+    line-height: 1.6;
 }
 
-.card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
+/* Logo Estilo HTT */
+#logo-htt {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--text-main);
+    letter-spacing: -1px;
 }
 
-button {
-    padding: 10px 20px;
+#logo-htt span {
+    color: var(--accent-cyan);
+    font-style: italic; /* Para darle ese aire de "rayo" del logo */
+}
+
+/* Estilo de la Sección FAQ */
+#faq {
+    padding: 4rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+summary {
+    padding: 1rem;
+    background: var(--bg-card);
+    border: 1px solid #333;
+    margin-bottom: 0.5rem;
     cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    list-style: none; /* Quita la flecha por defecto */
+}
+
+summary:hover {
+    border-color: var(--accent-cyan);
+}
+
+details p {
+    padding: 1rem;
+    color: var(--text-gray);
 }
