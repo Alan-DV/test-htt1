@@ -623,17 +623,33 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Efecto de color al pasar el mouse */
-.social-icons a:hover {
-    color: var(--accent-cyan);
-    transform: translateY(-5px);
-    filter: drop-shadow(0 0 8px var(--accent-cyan));
+/* --- Estilo base de iconos en el footer --- */
+.social-icons a {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-/* El icono de WhatsApp en hover puede ponerse verde si preferís */
+/* --- Hover de Instagram (Rosa/Fucsia vibrante) --- */
+.social-icons a[aria-label="Instagram"]:hover {
+    color: #E1306C;
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 10px rgba(225, 48, 108, 0.6));
+}
+
+/* --- Hover de YouTube (Rojo puro) --- */
+.social-icons a[aria-label="YouTube"]:hover {
+    color: #FF0000;
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.6));
+}
+
+/* --- Hover de WhatsApp (Verde oficial) --- */
 .social-icons a[aria-label="WhatsApp"]:hover {
     color: #25D366;
-    filter: drop-shadow(0 0 8px #25D366);
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 10px rgba(37, 211, 102, 0.6));
 }
 
 .copyright {
