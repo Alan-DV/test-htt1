@@ -24,17 +24,46 @@ body {
     line-height: 1.6;
 }
 
-/* Logo Estilo HTT */
-#logo-htt {
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: var(--text-main);
-    letter-spacing: -1px;
+/* Estilo del Logo HTT */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
 }
 
-#logo-htt span {
+.logo-htt {
+    font-family: 'Arial Black', 'Inter', sans-serif; /* Buscamos una fuente pesada */
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--text-main);
+    text-decoration: none;
+    letter-spacing: -2px; /* Letras pegadas, muy usado en marcas deportivas */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* El "TO" estilizado */
+.accent-to {
     color: var(--accent-cyan);
-    font-style: italic; /* Para darle ese aire de "rayo" del logo */
+    font-style: italic;
+    font-size: 1.4rem; /* Un poco más pequeño */
+    margin: 0 2px;
+    position: relative;
+    display: inline-block;
+    transform: skewX(-10deg); /* Lo inclinamos para dar sensación de velocidad */
+}
+
+/* Un pequeño detalle: una línea cian debajo del logo al pasar el mouse */
+.logo-htt:hover {
+    text-shadow: 0 0 10px rgba(69, 243, 255, 0.5);
+}
+
+/* Responsive: Logo un poco más pequeño en móviles muy chicos */
+@media (max-width: 380px) {
+    .logo-htt {
+        font-size: 1.4rem;
+    }
 }
 
 /* Estilo de la Sección FAQ */
@@ -72,6 +101,12 @@ details p {
 }
 
 /* Layout Superior (Texto + Imagen) */
+
+.hero {
+    background-image: url('assets/img/tu-foto-atleta.jpg');
+}
+
+
 .servicios-intro {
     display: flex;
     flex-direction: column; /* Mobile First */
