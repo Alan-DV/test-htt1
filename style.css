@@ -407,7 +407,7 @@ details p {
     aspect-ratio: 9 / 16;
     border-radius: 12px;
     overflow: hidden;
-    
+
 }
 
 .carousel-item img {
@@ -501,4 +501,11 @@ details p {
         font-size: 1.8rem;
         padding: 0 1rem;
     }
+}
+
+/* Clase que aplicaremos con JS mientras arrastramos */
+.carousel-container.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto; /* Quita el suavizado de CSS para que el JS sea instantáneo */
+    cursor: grabbing;
 }
