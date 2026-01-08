@@ -185,6 +185,72 @@ details p {
     }
 }
 
+
+/* Sección Método */
+#metodo {
+    padding: 5rem 1.5rem;
+    background-color: var(--bg-dark);
+}
+
+.metodo-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Mobile First: uno arriba del otro */
+    gap: 3rem;
+    align-items: center;
+}
+
+.metodo-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+.metodo-image img {
+    width: 100%;
+    border-radius: 8px;
+    /* Efecto sutil de sombra cian para resaltar la app */
+    box-shadow: 0 0 30px rgba(69, 243, 255, 0.15);
+}
+
+.metodo-content {
+    flex: 1;
+    text-align: left;
+}
+
+.metodo-content h2 {
+    font-size: 2.2rem;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.metodo-content p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+
+.metodo-content strong {
+    color: var(--accent-cyan); /* Resaltamos palabras clave con tu color */
+}
+
+/* Desktop: Imagen a la izquierda, texto a la derecha */
+@media (min-width: 768px) {
+    .metodo-container {
+        flex-direction: row; /* En PC se ponen de costado */
+        justify-content: space-between;
+    }
+    
+    .metodo-image, .metodo-content {
+        width: 48%; /* Dividimos el espacio casi a la mitad */
+    }
+}
+
+
+
 /* Sección Clientes */
 #clientes {
     padding: 4rem 0;
