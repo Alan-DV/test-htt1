@@ -541,10 +541,10 @@ details p {
     letter-spacing: 2px;
 }
 
-/* Botón de WhatsApp estilo HTT */
+/* Botón de WhatsApp con el color oficial */
 .btn-whatsapp {
-    background-color: var(--accent-cyan);
-    color: var(--bg-dark);
+    background-color: #25D366; /* Verde oficial WhatsApp */
+    color: #ffffff; /* Texto en blanco para mejor contraste */
     padding: 1.2rem 2.5rem;
     text-decoration: none;
     font-weight: bold;
@@ -553,12 +553,14 @@ details p {
     font-size: 1.1rem;
     transition: 0.3s all ease;
     display: inline-block;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); /* Sombra verde sutil */
 }
 
 .btn-whatsapp:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(69, 243, 255, 0.4);
-    background-color: #ffffff; /* Cambio a blanco al pasar el mouse */
+    background-color: #128C7E; /* Un verde un poco más oscuro al pasar el mouse */
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+    color: #ffffff;
 }
 
 /* Ajuste para móviles */
