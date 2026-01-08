@@ -172,7 +172,7 @@ header nav ul li a:hover {
 #home {
     height: 100vh; /* Ocupa toda la pantalla */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                      url('assets/img/tu-foto-atleta.jpg'); /* Usa tu foto de referencia */
+                      url('assets/img/foto-central.jpg'); /* Usa tu foto de referencia */
     background-size: cover;
     background-position: center;
     display: flex;
