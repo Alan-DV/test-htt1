@@ -65,3 +65,15 @@ document.addEventListener('click', (event) => {
         burger.classList.remove('toggle');
     }
 });
+
+
+const whatsappLink = document.getElementById('whatsapp-link');
+const telefono = "+5491126639753"; // <--- CAMBIA ESTO POR TU NÚMERO (Sin el +)
+
+const mensaje = `Hola 👋, me gustaría recibir información sobre el entrenamiento personalizado de HOWTOTRAIN 🏋️
+Me llamo ...`;
+
+// Esta función convierte los emojis y espacios en código que WhatsApp entiende
+const mensajeCodificado = encodeURIComponent(mensaje);
+
+whatsappLink.href = `https://wa.me/${telefono}?text=${mensajeCodificado}`;
