@@ -580,3 +580,17 @@ details p {
     scroll-behavior: auto; /* Quita el suavizado de CSS para que el JS sea instantáneo */
     cursor: grabbing;
 }
+
+/* Ajuste para que el Header no tape los títulos al navegar */
+#clientes, #metodo, #servicios, #contacto {
+    scroll-margin-top: 80px; /* Ajustá este número al alto real de tu header */
+}
+
+/* Mejora visual para la sección de Atletas */
+#clientes {
+    padding-top: 4rem; /* Agregamos un poco más de aire arriba del título */
+}
+
+#clientes h2 {
+    margin-top: 0; /* Aseguramos que el título no tenga márgenes que rompan el diseño */
+}
