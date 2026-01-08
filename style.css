@@ -596,41 +596,49 @@ details p {
 }
 
 footer {
-    background-color: #0a0a0a;
-    padding: 3rem 1.5rem;
+    background-color: #050505;
+    padding: 4rem 1.5rem 2rem;
     text-align: center;
-    border-top: 1px solid #222;
+    border-top: 1px solid #1a1a1a;
 }
 
 .footer-logo {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 1.5rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
     color: #fff;
-    margin-bottom: 1.5rem;
 }
 
-.footer-socials {
-    margin-bottom: 2rem;
+.social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 2.5rem;
 }
 
-.footer-socials a {
-    color: var(--accent-cyan);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    transition: 0.3s;
-}
-
-.footer-socials a:hover {
+.social-icons a {
     color: #fff;
-    text-shadow: 0 0 10px var(--accent-cyan);
+    font-size: 1.8rem; /* Tamaño de los iconos */
+    transition: all 0.3s ease;
+}
+
+/* Efecto de color al pasar el mouse */
+.social-icons a:hover {
+    color: var(--accent-cyan);
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 8px var(--accent-cyan));
+}
+
+/* El icono de WhatsApp en hover puede ponerse verde si preferís */
+.social-icons a[aria-label="WhatsApp"]:hover {
+    color: #25D366;
+    filter: drop-shadow(0 0 8px #25D366);
 }
 
 .copyright {
-    color: #555;
+    color: #444;
     font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
