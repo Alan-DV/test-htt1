@@ -99,6 +99,53 @@ header nav ul li a:hover {
     color: var(--accent-cyan);
 }
 
+/* --- Estilos del Burger (Oculto en PC) --- */
+.burger {
+    display: none; /* Se oculta en PC */
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-main);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* --- Responsive: Ajustes para Móvil --- */
+@media (max-width: 768px) {
+    .burger {
+        display: block; /* Se muestra en móvil */
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%; /* Ocupa el 70% del ancho */
+        transform: translateX(100%); /* Lo escondemos a la derecha */
+        transition: transform 0.5s ease-in;
+        gap: 2rem;
+    }
+
+    /* Clase que activa el JS para mostrar el menú */
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    /* Animación del icono X (opcional pero queda pro) */
+    .toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
+    .toggle .line2 { opacity: 0; }
+    .toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
+}
 /* Sección Home (Hero) */
 #home {
     height: 100vh; /* Ocupa toda la pantalla */

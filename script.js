@@ -28,3 +28,23 @@ slider.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 1.5; 
     slider.scrollLeft = scrollLeft - walk;
 });
+
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+    // Abrir/Cerrar menú
+    nav.classList.toggle('nav-active');
+    
+    // Animación de la hamburguesa (se convierte en X)
+    burger.classList.toggle('toggle');
+});
+
+// Cerrar menú al hacer click en cualquier link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('nav-active');
+        burger.classList.remove('toggle');
+    });
+});
