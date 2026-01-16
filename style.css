@@ -199,39 +199,54 @@ header nav ul li a:hover {
     margin: 0 auto 2.5rem;
 }
 
-/* Botones estilo referencia */
+/* --- Botones del Hero (Actualizado) --- */
 .home-buttons {
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Un poco más de aire entre botones */
     justify-content: center;
+    flex-wrap: wrap; /* CLAVE: Si no entran, baja uno abajo del otro */
+    margin-top: 2rem;
 }
 
 .btn-primary, .btn-secondary {
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem; /* Más anchos para que el texto respire */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 800; /* Letra bien gruesa (Roboto Black) */
     text-transform: uppercase;
-    border-radius: 4px;
-    transition: 0.3s;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-radius: 4px; /* Bordes levemente redondeados */
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se parta en dos renglones */
 }
 
+/* Botón Principal (Fondo Cian) */
 .btn-primary {
     background-color: var(--accent-cyan);
-    color: #000;
+    color: #000; /* Texto negro para contraste máximo */
+    border: 2px solid var(--accent-cyan); /* Para igualar tamaño con el secundario */
 }
 
+/* Hover Principal: Se pone blanco y sube */
+.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Botón Secundario (Borde Blanco) */
 .btn-secondary {
     border: 2px solid #fff;
     color: #fff;
+    background-color: transparent;
 }
 
-.btn-primary:hover {
-    background-color: #fff;
-    transform: translateY(-3px);
-}
-
+/* Hover Secundario: El borde y texto se ponen Cian */
 .btn-secondary:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo apenas visible */
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
 }
 
 /* Ajuste para que el contenido no quede debajo del header */
