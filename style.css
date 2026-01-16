@@ -239,11 +239,45 @@ body {
     padding-top: 0;
 }
 
-/* Estilo de la Sección FAQ */
-#faq {
-    padding: 4rem 1rem;
-    max-width: 800px;
-    margin: 0 auto;
+/* Sección FAQ */
+.faq {
+    padding: 4rem 2rem; /* Aumentamos el padding general para más aire */
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.faq h2 {
+    text-align: center; /* Título centrado */
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    font-weight: 900;
+    margin-bottom: 3rem; /* Más espacio debajo del título */
+    letter-spacing: 2px;
+}
+
+.faq-item {
+    background-color: #1a1a1a;
+    padding: 1.5rem; /* Un poco más de relleno interno */
+    margin-bottom: 1.5rem; /* Separación entre cada bloque de pregunta */
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-cyan); /* Detalle en cian para resaltar */
+}
+
+.faq-question {
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-weight: 300;
+    color: #ccc;
+    padding-top: 1rem; /* Espacio entre pregunta y respuesta al abrirse */
 }
 
 summary {
