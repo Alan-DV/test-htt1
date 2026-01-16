@@ -239,11 +239,16 @@ body {
     padding-top: 0;
 }
 
+
+
 /* Sección FAQ */
 .faq {
     padding: 4rem 2rem; /* Aumentamos el padding general para más aire */
     background-color: var(--bg-dark);
     color: var(--text-main);
+    max-width: 800px;
+    margin: 0 auto;
+
 }
 
 .faq h2 {
