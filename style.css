@@ -656,3 +656,29 @@ footer {
     transform: translateY(-5px);
     filter: drop-shadow(0 0 10px rgba(255, 0, 80, 0.6));
 }
+
+/* Definición Global */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+/* Títulos con Impacto (Heading) */
+h1, h2, h3 {
+    font-weight: 900; /* Lo más grueso para que se vea potente */
+    text-transform: uppercase; /* Estilo deportivo/entrenamiento */
+    letter-spacing: 1px;
+}
+
+/* Párrafos y Textos Largos */
+p {
+    font-weight: 300; /* Más fino para que sea liviano de leer */
+    color: #ccc; /* Un gris claro para que no canse la vista sobre el negro */
+}
+
+/* Botones y Menú */
+.nav-links a, .btn-whatsapp, .cta-button {
+    font-weight: 700; /* Negrita intermedia para destacar acción */
+    text-transform: uppercase;
+}
