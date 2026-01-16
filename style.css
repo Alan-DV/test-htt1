@@ -24,48 +24,35 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo del Logo HTT */
-.logo-wrapper {
-    display: flex;
+/* --- NUEVO ESTILO PARA EL LOGO DE IMAGEN --- */
+
+/* El enlace que envuelve la imagen */
+.logo-link {
+    display: flex; /* Ayuda a centrar la imagen verticalmente */
     align-items: center;
+    text-decoration: none; /* Por si acaso */
 }
 
-.logo-htt {
-    font-family: 'Arial Black', 'Inter', sans-serif; /* Buscamos una fuente pesada */
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: var(--text-main);
-    text-decoration: none;
-    letter-spacing: -2px; /* Letras pegadas, muy usado en marcas deportivas */
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
+/* La imagen del logo en sí */
+.logo-img {
+    height: 40px; /* Altura inicial. Ajústala según lo grande que quieras el logo */
+    width: auto;  /* Mantiene la proporción original de la imagen */
+    transition: transform 0.3s ease; /* Suaviza el efecto hover */
 }
 
-/* El "TO" estilizado */
-.accent-to {
-    color: var(--accent-cyan);
-    font-style: italic;
-    font-size: 1.4rem; /* Un poco más pequeño */
-    margin: 0 2px;
-    position: relative;
-    display: inline-block;
-    transform: skewX(-10deg); /* Lo inclinamos para dar sensación de velocidad */
+/* Efecto opcional al pasar el mouse: un pequeño "zoom" */
+.logo-link:hover .logo-img {
+    transform: scale(1.05);
+    /* Si quieres un brillo cian, descomenta la siguiente línea: */
+    /* filter: drop-shadow(0 0 5px rgba(41, 217, 230, 0.5)); */
 }
 
-/* Un pequeño detalle: una línea cian debajo del logo al pasar el mouse */
-.logo-htt:hover {
-    text-shadow: 0 0 10px rgba(69, 243, 255, 0.5);
-}
-
-/* Responsive: Logo un poco más pequeño en móviles muy chicos */
+/* Responsive: Ajuste para móviles muy pequeños */
 @media (max-width: 380px) {
-    .logo-htt {
-        font-size: 1.4rem;
+    .logo-img {
+        height: 30px; /* Un poco más pequeño en pantallas angostas */
     }
 }
-
 
 /* Header Fijo */
 header {
