@@ -239,52 +239,108 @@ body {
     padding-top: 0;
 }
 
-
-
-/* Sección FAQ */
-.faq {
-    padding: 4rem 2rem; /* Aumentamos el padding general para más aire */
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    max-width: 800px;
-    margin: 0 auto;
-
+/* --- SECCIÓN FAQ (Corregido y Centrado) --- */
+/* --- SECCIÓN FAQ --- */
+#faq {
+    padding: 5rem 1.5rem; /* Buen espaciado arriba y abajo */
+    background-color: var(--bg-dark); /* Fondo negro */
+    scroll-margin-top: 80px; /* Para que el menú no tape el título al hacer clic */
 }
 
-.faq h2 {
-    text-align: center; /* Título centrado */
-    font-size: 2.5rem; /* Tamaño de fuente más grande */
+/* Título FAQ: Grande, Centrado y con Estilo */
+#faq h2 {
+    text-align: center;
+    font-size: 3rem; /* Letra grande como pediste */
     font-weight: 900;
-    margin-bottom: 3rem; /* Más espacio debajo del título */
+    color: var(--text-main);
+    text-transform: uppercase;
     letter-spacing: 2px;
+    margin-bottom: 3rem; /* Separación del bloque de preguntas */
+    position: relative;
 }
 
-.faq-item {
-    background-color: #1a1a1a;
-    padding: 1.5rem; /* Un poco más de relleno interno */
-    margin-bottom: 1.5rem; /* Separación entre cada bloque de pregunta */
-    border-radius: 8px;
-    border-left: 3px solid var(--accent-cyan); /* Detalle en cian para resaltar */
+/* Línea cian decorativa debajo del título */
+#faq h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-cyan);
+    margin: 15px auto 0; /* Auto centra la línea */
+    border-radius: 2px;
 }
 
-.faq-question {
+/* Contenedor de las preguntas: Esto hace la magia del centrado */
+.faq-container {
+    max-width: 800px; /* Ancho máximo para PC (estilo tarjeta elegante) */
+    margin: 0 auto;   /* Centra el bloque en la pantalla */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;      /* Espacio entre cada tarjeta (separadas) */
+}
+
+/* Estilo de la Tarjeta (details) */
+details {
+    background-color: var(--bg-card); /* Gris oscuro (#121212) */
+    border-radius: 12px;
+    border: 1px solid #333; /* Borde sutil */
+    overflow: hidden; /* Para que el contenido no se salga de los bordes redondeados */
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover en la tarjeta completa */
+details:hover {
+    border-color: var(--accent-cyan); /* Se ilumina el borde */
+    transform: translateY(-3px); /* Se levanta un poquito */
+}
+
+/* La barra de la pregunta (summary) */
+summary {
+    padding: 1.5rem; /* Relleno cómodo para el dedo/mouse */
+    cursor: pointer;
     font-weight: 700;
     font-size: 1.1rem;
-    cursor: pointer;
+    color: var(--text-main);
+    list-style: none; /* Quita el triángulo feo por defecto */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Manda el "+" a la derecha */
     align-items: center;
 }
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    font-weight: 300;
-    color: #ccc;
-    padding-top: 1rem; /* Espacio entre pregunta y respuesta al abrirse */
+/* El icono "+" personalizado */
+summary::after {
+    content: '+';
+    color: var(--accent-cyan);
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1;
+    transition: transform 0.3s ease;
 }
 
+/* Animación cuando se abre la pregunta */
+details[open] summary::after {
+    transform: rotate(45deg); /* Gira y se convierte en una X */
+    color: #ff4d4d; /* Cambia a rojo (opcional, queda muy pro) */
+}
+
+/* El texto de la respuesta */
+details p {
+    padding: 0 1.5rem 1.5rem; /* Relleno lateral y abajo */
+    color: #cccccc; /* Gris claro para lectura */
+    font-weight: 300;
+    line-height: 1.6;
+    border-top: 1px solid #2a2a2a; /* Línea divisoria muy sutil */
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+/* Fix para ocultar el triángulo nativo en Chrome/Safari */
+summary::-webkit-details-marker {
+    display: none;
+}
+/* end faq */
+
+/*
 summary {
     padding: 1rem;
     background: var(--bg-card);
@@ -293,7 +349,7 @@ summary {
     cursor: pointer;
     border-radius: 8px;
     font-weight: bold;
-    list-style: none; /* Quita la flecha por defecto */
+    list-style: none; 
 }
 
 summary:hover {
@@ -304,8 +360,9 @@ details p {
     padding: 1rem;
     color: var(--text-gray);
 }
+*/
 
-/* Sección de Servicios */
+ /*Sección de Servicios */
 #servicios {
     padding: 4rem 1.5rem;
     max-width: 1100px;
