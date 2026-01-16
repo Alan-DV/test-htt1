@@ -292,6 +292,7 @@ details {
 details:hover {
     border-color: var(--accent-cyan); /* Se ilumina el borde */
     transform: translateY(-3px); /* Se levanta un poquito */
+    box-shadow: 0 5px 15px rgba(41, 217, 230, 0.2);
 }
 
 /* La barra de la pregunta (summary) */
