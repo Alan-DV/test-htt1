@@ -649,3 +649,10 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/* --- Hover de TikTok --- */
+.social-icons a[aria-label="TikTok"]:hover {
+    color: #ff0050; /* Rojo/Fucsia característico de TikTok */
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 10px rgba(255, 0, 80, 0.6));
+}
