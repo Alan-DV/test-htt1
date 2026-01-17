@@ -168,17 +168,19 @@ header nav ul li a:hover {
 
 /* Contenido del Hero */
 .home-content {
-    max-width: 900px;
+    max-width: 1200px;
     padding: 0 20px;
     z-index: 1;
+    width: 100%; /* Asegura que ocupe el espacio disponible */
 }
 
 .home-content h1 {
     /* CLAMP: Ajusta el tamaño automáticamente entre min y max */
-    font-size: clamp(1.8rem, 5vw, 4rem); 
+    font-size: clamp(1.8rem, 5vw, 3.8rem); 
     line-height: 1.2;
     margin-bottom: 1.5rem;
     text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    white-space: normal; /* Permite que el navegador respete el flujo, pero el ancho lo controlamos arriba */
 }
 
 .home-content p {
@@ -462,7 +464,7 @@ footer {
    ========================================= */
 
 /* Tablets y PC Escritorio (Más de 768px) */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     .servicios-intro {
         flex-direction: row; /* Lado a lado */
         text-align: left;
@@ -484,14 +486,20 @@ footer {
     .carousel-item {
         flex: 0 0 calc((100% - 45px) / 4); /* 4 fotos en fila */
     }
+
+    /* Aseguramos que el menú de PC se vea y el burger no */
+    .burger { display: none; }
+    .nav-links { display: flex; }
+    .close-menu { display: none; }
 }
 
 /* Celulares (Menos de 768px) */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     
     /* MENÚ HAMBURGUESA */
     .burger {
         display: block;
+        cursor: pointer;
     }
 
     .nav-links {
@@ -512,9 +520,19 @@ footer {
     }
 
     .nav-active {
-        transform: translateX(0%);
+        transform: translateX(0%) !important;
     }
     
+    /* Estilo de los links dentro del menú móvil */
+    header nav ul.nav-links li {
+        opacity: 1; /* Asegura que se vean */
+    }
+
+    header nav ul.nav-links li a {
+        font-size: 1.5rem; /* Letra más grande para tocar con el dedo */
+    }
+
+
     /* Cruz de cerrar */
     .close-menu {
         display: block;
@@ -523,6 +541,7 @@ footer {
         right: 30px;
         font-size: 2.5rem;
         color: var(--accent-cyan);
+        cursor: pointer;
     }
 
     /* AJUSTES DEL HERO EN MÓVIL */
