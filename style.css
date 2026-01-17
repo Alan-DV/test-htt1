@@ -372,7 +372,10 @@ details {
     border-radius: 8px;
     border: 1px solid #333;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
+
+
 
 summary {
     padding: 1.5rem;
@@ -382,6 +385,10 @@ summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+details:hover summary {
+    color: var(--accent-cyan); 
 }
 
 summary::after {
@@ -396,12 +403,17 @@ details[open] summary::after {
     color: #ff4d4d;
 }
 
+details:hover summary::after {
+    color: var(--accent-cyan);
+}
+
 details p {
     padding: 0 1.5rem 1.5rem;
     border-top: 1px solid #222;
     padding-top: 1rem;
     margin: 0;
 }
+
 
 /* --- ESTILOS PARA EL TÍTULO DE FAQ --- */
 #faq h2 {
@@ -412,6 +424,22 @@ details p {
     color: #fff;              /* Aseguramos que sea blanco */
     font-size: 2.5rem;        /* Un tamaño acorde */
     text-transform: uppercase;
+}
+
+/* --- HOVER (ILUMINACIÓN) EN PREGUNTAS FAQ --- */
+
+/* Asumiendo que el botón o la caja de la pregunta tiene la clase .accordion-button o .faq-item */
+.accordion-button:hover {
+    border-color: var(--accent-cyan);         /* Cambia el borde al color de la marca */
+    color: var(--accent-cyan);                /* (Opcional) Cambia el texto también */
+    box-shadow: 0 0 15px rgba(6, 215, 246, 0.3); /* Un resplandor suave estilo neón */
+    cursor: pointer;                          /* Asegura que aparezca la manito */
+    transition: all 0.3s ease;                /* Suaviza la animación */
+}
+
+/* Si el ícono (+) es un elemento separado, también lo iluminamos */
+.accordion-button:hover::after {
+    color: var(--accent-cyan);
 }
 
 /* --- Contacto --- */
