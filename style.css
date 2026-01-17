@@ -403,6 +403,17 @@ details p {
     margin: 0;
 }
 
+/* --- ESTILOS PARA EL TÍTULO DE FAQ --- */
+#faq h2 {
+    text-align: center;       /* Esto centra el texto horizontalmente */
+    width: 100%;              /* Asegura que el título ocupe todo el ancho disponible */
+    display: block;           /* Comportamiento de bloque estándar */
+    margin-bottom: 40px;      /* Espacio entre el título y las preguntas */
+    color: #fff;              /* Aseguramos que sea blanco */
+    font-size: 2.5rem;        /* Un tamaño acorde */
+    text-transform: uppercase;
+}
+
 /* --- Contacto --- */
 #contacto {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/img/foto-contacto.jpg');
