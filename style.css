@@ -829,3 +829,44 @@ p {
     font-weight: 700; /* Negrita intermedia para destacar acción */
     text-transform: uppercase;
 }
+
+
+/* --- CORRECCIONES PARA CELULARES (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Ajustamos el Título Gigante */
+    .home-content h1 {
+        font-size: 2rem; /* Bajamos de 3.5rem a 2rem (mucho más chico) */
+        line-height: 1.2; /* Juntamos un poco los renglones */
+        margin-bottom: 1rem;
+    }
+
+    /* 2. Ajustamos el subtítulo (párrafo) */
+    .home-content p {
+        font-size: 1rem; /* Texto legible pero no invasivo */
+        padding: 0 10px; /* Un poco de margen a los costados */
+        margin-bottom: 2rem;
+    }
+
+    /* 3. Acomodamos los botones */
+    .home-buttons {
+        flex-direction: column; /* Pone uno abajo del otro para que sean fáciles de tocar */
+        gap: 15px; /* Espacio entre el botón de arriba y el de abajo */
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%; /* Que ocupen todo el ancho disponible */
+        max-width: 300px; /* Pero que no sean exageradamente anchos */
+        padding: 1rem 0; /* Relleno vertical cómodo */
+        display: flex;       /* Truco para centrar texto */
+        justify-content: center;
+    }
+    
+    /* 4. Ajuste de la foto de fondo en el celular */
+    /* Esto es IMPORTANTE: A veces en el celular la foto se corta y no se ve a la gente */
+    #home::before {
+        background-position: center center; /* Probá cambiar a '65% center' si querés mover la foto horizontalmente */
+    }
+}
