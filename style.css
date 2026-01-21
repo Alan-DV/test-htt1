@@ -51,7 +51,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15x 5%;
+    padding: 15x 40px;
     background-color: rgba(0, 0, 0, 0.9); /* Casi negro total */
     backdrop-filter: blur(10px);
     z-index: 1000;
