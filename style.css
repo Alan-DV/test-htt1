@@ -636,4 +636,8 @@ footer {
     #home::before {
         background-position: 65% center; 
     }
+
+    header {
+        padding: 20px 50px; /* Más aire a los costados y arriba */
+    }
 }
