@@ -51,7 +51,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
+    padding: 15x 20px;
     background-color: rgba(0, 0, 0, 0.9); /* Casi negro total */
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -67,8 +67,8 @@ header {
 }
 
 .logo-img {
-    height: 40px; 
-    width: auto;
+    height: auto; 
+    width: 140px;
     transition: transform 0.3s ease;
 }
 
@@ -519,6 +519,15 @@ footer {
 
 /* Tablets y PC Escritorio (Más de 768px) */
 @media (min-width: 1025px) {
+
+    header {
+        padding: 20px 50px; /* Más aire a los costados y arriba */
+    }
+
+    .logo img {
+        width: 220px; /* Ahora sí, tamaño grande e imponente */
+    }
+
     .servicios-intro {
         flex-direction: row; /* Lado a lado */
         text-align: left;
@@ -545,6 +554,12 @@ footer {
     .burger { display: none; }
     .nav-links { display: flex; }
     .close-menu { display: none; }
+
+    .nav-links a {
+        font-size: 1.2rem; /* Letra más grande y legible */
+        margin-left: 35px; /* Más separación entre palabras */
+        font-weight: 600;
+    }
 }
 
 /* Celulares (Menos de 768px) */
