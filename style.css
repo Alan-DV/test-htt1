@@ -641,3 +641,22 @@ footer {
         padding: 20px 50px; /* Más aire a los costados y arriba */
     }
 }
+
+/* Estilo específico para el nuevo subtítulo */
+.hero-subtitle {
+    font-size: 1.2rem;       /* Tamaño legible */
+    line-height: 1.6;        /* Buen espacio entre renglones */
+    color: #e0e0e0;          /* Blanco suave (no puro) para no cansar la vista */
+    margin-bottom: 2rem;     /* Espacio antes del botón */
+    max-width: 800px;        /* IMPORTANTE: Evita que el texto sea una línea eterna en PC */
+    margin-left: auto;       /* Centrado automático */
+    margin-right: auto;      /* Centrado automático */
+}
+
+/* Ajuste para móviles para el subtítulo */
+@media (max-width: 1024px) {
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px; /* Un poquito de aire a los costados */
+    }
+}
