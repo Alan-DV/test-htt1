@@ -262,7 +262,7 @@ footer {
 
     .grid-2-cols {
         grid-template-columns: 1fr; 
-        gap: 20px; /* Reducimos el hueco entre el grupo 1 y 2 para que parezca una sola lista */
+        gap: 15px; /* Reducimos el hueco entre el grupo 1 y 2 para que parezca una sola lista */
     }
 
     /* 2. Ajuste de márgenes para que las tarjetas no toquen los bordes de la pantalla */
