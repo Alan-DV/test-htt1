@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HowToTrain | Entrenamiento Personalizado</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,7 +23,6 @@
 
             <ul class="nav-links" id="nav-links">
                 <li class="close-menu" id="close-menu">&times;</li>
-
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#base-entrenamiento">Entrenamiento</a></li>
                 <li><a href="#paso-a-paso">Metodología</a></li>
@@ -36,15 +36,13 @@
         <div class="home-overlay">
             <div class="home-content">
                 <h1>
-                    <span style="color: var(--accent-cyan);">ENTRENAMIENTO</span> DE FUERZA<br>
-                    Y READAPTACIÓN <span style="color: var(--accent-cyan);">FUNCIONAL</span>
+                    <span class="text-accent">ENTRENAMIENTO</span> DE FUERZA<br>
+                    Y READAPTACIÓN <span class="text-accent">FUNCIONAL</span>
                 </h1>
-
                 <p class="hero-subtitle">
                     Desarrollamos y mejoramos tus habilidades motoras (fuerza, coordinación, estabilidad y flexibilidad)
                     con un sistema de entrenamiento integrado y progresivo.
                 </p>
-
                 <div class="home-buttons">
                     <a href="#contacto" class="btn-primary">Quiero empezar mi evaluación</a>
                 </div>
@@ -52,255 +50,192 @@
         </div>
     </section>
 
-    <section id="base-entrenamiento" style="padding: 80px 20px; background-color: var(--bg-color);">
-        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+    <section id="base-entrenamiento" class="bg-dark">
+        <div class="container">
             <h2 class="section-title">¿En qué se basa nuestro entrenamiento?</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto; color: #ccc;">
+            <p class="section-desc">
                 Nuestro abordaje se centra en mejorar tus habilidades motoras mediante ejercicios funcionales con peso
                 corporal, máquinas y diversos elementos, ajustando la progresión a tu nivel real.
             </p>
 
-            <div class="grid-2-cols"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
-
+            <div class="grid-2-cols align-center">
                 <div>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
-                            <span style="color: var(--accent-cyan); margin-right: 10px; font-size: 1.2rem;">✔</span>
-                            <p style="margin: 0;">Fuerza, potencia, coordinación, estabilidad y flexibilidad como ejes
-                                principales.</p>
+                    <ul class="check-list">
+                        <li>
+                            <span class="check-icon">✔</span>
+                            <p>Fuerza, potencia, coordinación, estabilidad y flexibilidad como ejes principales.</p>
                         </li>
-                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start;">
-                            <span style="color: var(--accent-cyan); margin-right: 10px; font-size: 1.2rem;">✔</span>
-                            <p style="margin: 0;">Trabajo con peso corporal, máquinas y elementos (bandas, pelotas,
-                                kettlebells).</p>
+                        <li>
+                            <span class="check-icon">✔</span>
+                            <p>Trabajo con peso corporal, máquinas y elementos (bandas, pelotas, kettlebells).</p>
                         </li>
                     </ul>
                 </div>
-
-                <div style="height: 300px; width: 100%; position: relative;">
-                    <img src="assets/img/ejercicio-entrenamiento.jpg" alt="Entrenamiento Funcional con elementos"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                <div class="image-box">
+                    <img src="assets/img/ejercicio-entrenamiento.jpg" alt="Entrenamiento Funcional con elementos">
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="sistema-integrado" style="padding: 80px 20px; background-color: var(--bg-card);">
-        <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    <section id="sistema-integrado" class="bg-card">
+        <div class="container text-center">
             <h2 class="section-title">Un sistema que combina lo mejor de varios métodos</h2>
-            <p style="max-width: 800px; margin: 0 auto 30px auto; color: #ccc;">
+            <p class="section-desc">
                 Tomamos como referencia pilates, crossfit, yoga, entrenamiento de fuerza, HIIT, SMFT, levantamiento
                 olímpico y FNP para crear un método integrador y seguro.
             </p>
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
-                <div
-                    style="background: #111; padding: 20px; border-radius: 8px; border-left: 3px solid var(--accent-cyan); width: 100%; max-width: 400px; text-align: left;">
-                    <h4 style="color: #fff; margin-bottom: 10px;">Selección efectiva</h4>
-                    <p style="font-size: 0.9rem; color: #aaa;">Seleccionamos lo más efectivo de cada método según tu
-                        objetivo específico.</p>
+            <div class="cards-grid">
+                <div class="feature-card">
+                    <h4>Selección efectiva</h4>
+                    <p>Seleccionamos lo más efectivo de cada método según tu objetivo específico.</p>
                 </div>
-                <div
-                    style="background: #111; padding: 20px; border-radius: 8px; border-left: 3px solid var(--accent-cyan); width: 100%; max-width: 400px; text-align: left;">
-                    <h4 style="color: #fff; margin-bottom: 10px;">Sin extremos</h4>
-                    <p style="font-size: 0.9rem; color: #aaa;">Evitamos los extremos: priorizamos técnica, control y
-                        progresión inteligente.</p>
+                <div class="feature-card">
+                    <h4>Sin extremos</h4>
+                    <p>Evitamos los extremos: priorizamos técnica, control y progresión inteligente.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resultados" style="padding: 80px 20px; background-color: var(--bg-color);">
-        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+    <section id="resultados" class="bg-dark">
+        <div class="container">
             <h2 class="section-title">Resultados que podés esperar</h2>
-            <p style="text-align: center; margin-bottom: 40px;">Nuestro sistema apunta a que te muevas mejor, sin dolor y más control.</p>
+            <p class="section-desc">Nuestro sistema apunta a que te muevas mejor, sin dolor y más control.</p>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 15px; padding: 15px; background: #1a1a1a; border-radius: 8px;">
-                        <strong style="color: var(--accent-cyan);">Corregir</strong> diferentes síndromes posturales y
-                        reducir dolores asociados.
-                    </li>
-                    <li style="margin-bottom: 15px; padding: 15px; background: #1a1a1a; border-radius: 8px;">
-                        <strong style="color: var(--accent-cyan);">Mejorar</strong> tus “weak links” para que dejen de
-                        limitarte al entrenar.
-                    </li>
-                    <li style="margin-bottom: 15px; padding: 15px; background: #1a1a1a; border-radius: 8px;">
-                        <strong style="color: var(--accent-cyan);">Aprender</strong> a ejecutar patrones de movimiento
-                        eficientes (empujar, traccionar, lanzar, etc.).
-                    </li>
+            <div class="grid-2-cols">
+                <ul class="results-list">
+                    <li><strong class="text-accent">Corregir</strong> diferentes síndromes posturales y reducir dolores asociados.</li>
+                    <li><strong class="text-accent">Mejorar</strong> tus “weak links” para que dejen de limitarte al entrenar.</li>
+                    <li><strong class="text-accent">Aprender</strong> a ejecutar patrones de movimiento eficientes.</li>
                 </ul>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 15px; padding: 15px; background: #1a1a1a; border-radius: 8px;">
-                        <strong style="color: var(--accent-cyan);">Desarrollar</strong> conciencia corporal y trabajar
-                        según cadenas musculares.
-                    </li>
-                    <li style="margin-bottom: 15px; padding: 15px; background: #1a1a1a; border-radius: 8px;">
-                        <strong style="color: var(--accent-cyan);">Reactivar</strong> el sistema de estabilización
-                        profunda para un cuerpo más hábil.
-                    </li>
+                <ul class="results-list">
+                    <li><strong class="text-accent">Desarrollar</strong> conciencia corporal y trabajar según cadenas musculares.</li>
+                    <li><strong class="text-accent">Reactivar</strong> el sistema de estabilización profunda.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="paso-a-paso" style="padding: 80px 20px; background-color: var(--bg-card); text-align: center;">
-        <h2 class="section-title">Así funciona nuestro proceso</h2>
-        <p style="margin-bottom: 50px;">Evaluamos, planificamos y ajustamos de forma continua.</p>
+    <section id="paso-a-paso" class="bg-card text-center">
+        <div class="container">
+            <h2 class="section-title">Así funciona nuestro proceso</h2>
+            <p class="section-desc">Evaluamos, planificamos y ajustamos de forma continua.</p>
 
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-            <div style="width: 250px; padding: 20px; border: 1px solid #333; border-radius: 12px;">
-                <div style="font-size: 2rem; color: var(--accent-cyan); margin-bottom: 15px;">1</div>
-                <h3 style="margin-bottom: 10px;">Evaluación</h3>
-                <p style="font-size: 0.9rem; color: #aaa;">Analizamos postura, movilidad y fuerza para entender tu
-                    cuerpo hoy.</p>
-            </div>
-            <div style="width: 250px; padding: 20px; border: 1px solid #333; border-radius: 12px;">
-                <div style="font-size: 2rem; color: var(--accent-cyan); margin-bottom: 15px;">2</div>
-                <h3 style="margin-bottom: 10px;">Plan Adaptado</h3>
-                <p style="font-size: 0.9rem; color: #aaa;">Diseñamos un plan específico según nivel, objetivos y
-                    lesiones.</p>
-            </div>
-            <div style="width: 250px; padding: 20px; border: 1px solid #333; border-radius: 12px;">
-                <div style="font-size: 2rem; color: var(--accent-cyan); margin-bottom: 15px;">3</div>
-                <h3 style="margin-bottom: 10px;">Progresión</h3>
-                <p style="font-size: 0.9rem; color: #aaa;">Ajustamos intensidad y volumen mes a mes sin saltos bruscos.
-                </p>
-            </div>
-            <div style="width: 250px; padding: 20px; border: 1px solid #333; border-radius: 12px;">
-                <div style="font-size: 2rem; color: var(--accent-cyan); margin-bottom: 15px;">4</div>
-                <h3 style="margin-bottom: 10px;">Seguimiento</h3>
-                <p style="font-size: 0.9rem; color: #aaa;">Revisamos avances y corregimos técnica constantemente.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="para-quien" style="padding: 80px 20px; background-color: var(--bg-color);">
-        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <h2 class="section-title">¿Es este entrenamiento para vos?</h2>
-            <p style="font-style: italic; color: var(--accent-cyan); margin-bottom: 30px;">"Ideal si has intentado de
-                todo y no has tenido resultados"</p>
-
-            <div
-                style="text-align: left; background: #151515; padding: 40px; border-radius: 15px; border: 1px solid #333;">
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 20px; font-size: 1.1rem;">👉 Personas con <strong>dolores
-                            recurrentes</strong> que quieren volver a entrenar con seguridad.</li>
-                    <li style="margin-bottom: 20px; font-size: 1.1rem;">👉 Quienes sienten que su cuerpo "no responde"
-                        (falta de fuerza/agilidad).</li>
-                    <li style="margin-bottom: 20px; font-size: 1.1rem;">👉 Deportistas recreativos que quieren mejorar
-                        rendimiento y postura.</li>
-                    <li style="margin-bottom: 20px; font-size: 1.1rem;">👉 Personas que desean mejorar su composición
-                        corporal (bajar grasa / subir músculo).</li>
-                </ul>
-                <p style="text-align: center; margin-top: 30px; font-size: 0.9rem; opacity: 0.7;">Cada plan es
-                    individualizado y adaptado a necesidades específicas.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre-nosotros" style="padding: 80px 20px; background-color: var(--bg-card); text-align: center;">
-        <h2 class="section-title">Quiénes estamos detrás de How To Train</h2>
-        <p style="max-width: 700px; margin: 0 auto 40px auto;">Entrenador especializado en movimiento, salud y
-            rendimiento.</p>
-
-        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
-            <div style="width: 300px;">
-                <div
-                    style="width: 150px; height: 150px; background: #333; border-radius: 50%; margin: 0 auto 20px auto; overflow: hidden; border: 2px solid var(--accent-cyan);">
-                    <img src="assets/img/photo-coach.png" alt="Coach How To Train"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Evaluación</h3>
+                    <p>Analizamos postura, movilidad y fuerza para entender tu cuerpo hoy.</p>
                 </div>
-                <h3 style="color: #fff; margin-bottom: 5px;">ROMAN GUERRERO</h3>
-                <p style="font-size: 0.9rem; color: #aaa;">Especialista en Biomecánica y Rehabilitación.</p>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Plan Adaptado</h3>
+                    <p>Diseñamos un plan específico según nivel, objetivos y lesiones.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Progresión</h3>
+                    <p>Ajustamos intensidad y volumen mes a mes sin saltos bruscos.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Seguimiento</h3>
+                    <p>Revisamos avances y corregimos técnica constantemente.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonios-new" style="padding: 80px 20px; background-color: var(--bg-color);">
-        <h2 class="section-title">Historias de cuerpos más funcionales</h2>
-        <div
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: 40px auto;">
-            <div style="background: #111; padding: 30px; border-radius: 10px; border: 1px solid #333;">
-                <p style="font-style: italic; margin-bottom: 15px;">"Llegué con dolor de espalda crónico. En 3 meses
-                    volví a correr sin molestias."</p>
-                <h4 style="color: var(--accent-cyan);">— Martín G.</h4>
-            </div>
-            <div style="background: #111; padding: 30px; border-radius: 10px; border: 1px solid #333;">
-                <p style="font-style: italic; margin-bottom: 15px;">"Nunca entendí cómo moverme hasta que empecé acá. La
-                    atención al detalle es increíble."</p>
-                <h4 style="color: var(--accent-cyan);">— Laura S.</h4>
-            </div>
-            <div style="background: #111; padding: 30px; border-radius: 10px; border: 1px solid #333;">
-                <p style="font-style: italic; margin-bottom: 15px;">"El mejor lugar para entrenar fuerte pero seguro. Se
-                    adaptan a mi ritmo."</p>
-                <h4 style="color: var(--accent-cyan);">— Pablo R.</h4>
+    <section id="para-quien" class="bg-dark">
+        <div class="container text-center">
+            <h2 class="section-title">¿Es este entrenamiento para vos?</h2>
+            <p class="quote-accent">"Ideal si has intentado de todo y no has tenido resultados"</p>
+
+            <div class="target-box">
+                <ul>
+                    <li>👉 Personas con <strong>dolores recurrentes</strong> que quieren volver a entrenar con seguridad.</li>
+                    <li>👉 Quienes sienten que su cuerpo "no responde" (falta de fuerza/agilidad).</li>
+                    <li>👉 Deportistas recreativos que quieren mejorar rendimiento y postura.</li>
+                    <li>👉 Personas que desean mejorar su composición corporal.</li>
+                </ul>
+                <p class="small-note">Cada plan es individualizado y adaptado a necesidades específicas.</p>
             </div>
         </div>
     </section>
 
+    <section id="sobre-nosotros" class="bg-card text-center">
+        <div class="container">
+            <h2 class="section-title">Quiénes estamos detrás de How To Train</h2>
+            <p class="section-desc">Entrenador especializado en movimiento, salud y rendimiento.</p>
 
-    <section id="faq">
-        <h2>FAQ</h2>
-        <div class="faq-container">
-            <details>
-                <summary>¿El entrenamiento es presencial o virtual?</summary>
-                <p>Ofrecemos ambas modalidades. La virtual se gestiona íntegramente a través de nuestra App
-                    personalizada.</p>
-            </details>
-            <details>
-                <summary>¿Necesito experiencia previa?</summary>
-                <p>No. Adaptamos el plan a tu nivel actual, ya seas un atleta de élite o estés comenzando tu camino.</p>
-            </details>
-            <details>
-                <summary>¿Cómo se maneja la recuperación de lesiones?</summary>
-                <p>Contamos con enfoque de kinesiología aplicado al movimiento para asegurar una vuelta al gym segura.
-                </p>
-            </details>
-            <details>
-                <summary>¿Cuál es el objetivo principal del desarrollo atlético vs. tradicional?</summary>
-                <p>Se enfoca en los fundamentos de agilidad, estabilidad, movilidad y coordinación como base para
-                    optimizar el desarrollo motor, en contraposición a modelos que solo priorizan la estética o la
-                    fuerza aislada.</p>
-            </details>
-
-            <details>
-                <summary>¿Por qué los movimientos aislados NO benefician tareas funcionales?</summary>
-                <p>Porque las ganancias del entrenamiento son específicas del movimiento que se entrena (Principio
-                    SAID). Los movimientos aislados no se transfieren necesariamente a las habilidades funcionales
-                    complejas que requiere el deporte o la vida diaria.</p>
-            </details>
-
-            <details>
-                <summary>¿Qué es el entrenamiento funcional?</summary>
-                <p>Es un entrenamiento con un propósito y objetivo claro, centrado en el cliente, atleta o paciente para
-                    ayudarle a alcanzar sus metas de forma segura y eficiente, integrando movimientos multiarticulares.
-                </p>
-            </details>
-
-            <details>
-                <summary>¿Por qué lo "funcional" depende de cada individuo?</summary>
-                <p>Porque las necesidades varían drásticamente según la edad, el deporte, el historial de lesiones, la
-                    etapa de rehabilitación y los objetivos específicos de la persona. Lo que es funcional para un
-                    corredor no lo es para un levantador de pesas.</p>
-            </details>
-
-            <details>
-                <summary>¿Cuál es el objetivo del Proceso de Auditoría Clínica (CAP)?</summary>
-                <p>Su objetivo es identificar el "eslabón débil" que está limitando la función en la cadena cinética,
-                    permitiendo atacar la causa raíz de la limitación en lugar de solo tratar el síntoma.</p>
-            </details>
+            <div class="coach-container">
+                <div class="coach-card">
+                    <div class="coach-img-wrapper">
+                        <img src="assets/img/photo-coach.png" alt="Coach Roman Guerrero">
+                    </div>
+                    <h3>ROMAN GUERRERO</h3>
+                    <p>Especialista en Biomecánica y Rehabilitación.</p>
+                </div>
+            </div>
         </div>
     </section>
-    </main>
+
+    <section id="testimonios-new" class="bg-dark">
+        <div class="container">
+            <h2 class="section-title">Historias de cuerpos más funcionales</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Llegué con dolor de espalda crónico. En 3 meses volví a correr sin molestias."</p>
+                    <h4>— Martín G.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Nunca entendí cómo moverme hasta que empecé acá. La atención al detalle es increíble."</p>
+                    <h4>— Laura S.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"El mejor lugar para entrenar fuerte pero seguro. Se adaptan a mi ritmo."</p>
+                    <h4>— Pablo R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-card">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>¿El entrenamiento es presencial o virtual?</summary>
+                    <p>Ofrecemos ambas modalidades. La virtual se gestiona íntegramente a través de nuestra App personalizada.</p>
+                </details>
+                <details>
+                    <summary>¿Necesito experiencia previa?</summary>
+                    <p>No. Adaptamos el plan a tu nivel actual, ya seas un atleta de élite o estés comenzando tu camino.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo se maneja la recuperación de lesiones?</summary>
+                    <p>Contamos con enfoque de kinesiología aplicado al movimiento para asegurar una vuelta al gym segura.</p>
+                </details>
+                <details>
+                    <summary>¿Cuál es el objetivo principal del desarrollo atlético?</summary>
+                    <p>Se enfoca en fundamentos de agilidad, estabilidad, movilidad y coordinación para optimizar el desarrollo motor.</p>
+                </details>
+                <details>
+                    <summary>¿Qué es el entrenamiento funcional?</summary>
+                    <p>Es un entrenamiento con propósito claro, integrando movimientos multiarticulares para alcanzar metas de forma segura.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <section id="contacto">
         <div class="contacto-container">
             <div class="contacto-content">
                 <h2>QUIERO MI PLAN PERSONALIZADO</h2>
                 <a href="https://wa.link/cs1faj" class="btn-whatsapp" target="_blank">
-                    Enviar WhatsApp
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
                 </a>
             </div>
         </div>
@@ -308,31 +243,17 @@
 
     <footer>
         <div class="footer-container">
-            <div class="footer-logo">
-                HOW<span class="accent-to">TO</span>TRAIN
-            </div>
-
+            <div class="footer-logo">HOW<span class="text-accent">TO</span>TRAIN</div>
             <div class="social-icons">
-                <a href="https://www.instagram.com/howtotrain.fit" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@howtotrain_fit" target="_blank" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://wa.me/5491122334455?text=Hola%20%F0%9F%91%8B%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20el%20entrenamiento%20personalizado%20de%20HOWTOTRAIN%20%F0%9F%8F%8B%EF%B8%8F%0AMe%20llamo%20..."
-                    target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://www.tiktok.com/@howtotrain.fit?lang=en" target="_blank" aria-label="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
+                <a href="https://www.instagram.com/howtotrain.fit" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@howtotrain_fit" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@howtotrain.fit?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
-
             <p class="copyright">© 2026 HTT - Todos los derechos reservados</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
